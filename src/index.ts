@@ -27,7 +27,6 @@ import { widgets as factory8 } from './factory.Inspector';
 import { widgets as factory9 } from './factory.LayoutVisual';
 import { widgets as factory10 } from './factory.Layouts';
 import { widgets as knowledge1 } from './knowledge.Knowledge';
-import { widgets as knowledge2 } from './knowledge.KnowledgeSheets';
 import { widgets as leads1 } from './leads.Leads';
 import { widgets as login1 } from './login.Login';
 import { widgets as mixer1 } from './mixer.AdHocLogs';
@@ -105,7 +104,6 @@ import { widgets as tasks10 } from './tasks.TicketsByProject';
 import { widgets as tasks11 } from './tasks.TicketsRecent';
 import { widgets as tasks12 } from './tasks.TicketsTable';
 import { widgets as things1 } from './things.Things';
-import { widgets as things2 } from './things.ThingsSheets';
 import { widgets as voice1 } from './voice.Logo';
 import { widgets as voice2 } from './voice.SpeakButton';
 import { widgets as voice3 } from './voice.Speaker';
@@ -143,7 +141,6 @@ export const widgets = {
     ...factory9,
     ...factory10,
     ...knowledge1,
-    ...knowledge2,
     ...leads1,
     ...login1,
     ...mixer1,
@@ -221,7 +218,6 @@ export const widgets = {
     ...tasks11,
     ...tasks12,
     ...things1,
-    ...things2,
     ...voice1,
     ...voice2,
     ...voice3,

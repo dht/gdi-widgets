@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper } from './Leads.style';
-import { Multi } from '@gdi/web-ui';
+import { Multi } from '@mult/core';
 
 import { useCrudDefinitions } from '@gdi/platformer';
 
