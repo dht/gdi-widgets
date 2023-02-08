@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImportData snapshots should match snapshot 1`] = `
+<div
+  className="sc-bcXHqe kPTVai ImportData-wrapper"
+  data-testid="ImportData-wrapper"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragEnter={[Function]}
+  onDragLeave={[Function]}
+  onDragOver={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  role="presentation"
+  tabIndex={0}
+>
+  <input
+    accept="application/json"
+    multiple={false}
+    onChange={[Function]}
+    onClick={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    tabIndex={-1}
+    type="file"
+  />
+  <i
+    className="material-icons"
+  >
+    cloud_upload
+  </i>
+  DropToUpload
+</div>
+`;
