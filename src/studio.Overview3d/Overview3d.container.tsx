@@ -9,6 +9,8 @@ export const Overview3dContainer = () => {
     const boards = useSelector(store.selectors.raw.$rawBoards);
     const { boardId } = currentIds;
 
+    console.log('boards ->', boards);
+
     const boardIds = useMemo(() => Object.keys(boards), [boards]);
 
     const board = useSelector(store.selectors.base.$boardConfig);
@@ -35,6 +37,7 @@ export const Overview3dContainer = () => {
         [boardIds, boardId]
     );
 
+    console.log('1 ->', boardId, boardIds);
     if (!boardId || boardIds.length === 0) {
         return null;
     }
