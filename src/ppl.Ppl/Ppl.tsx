@@ -35,6 +35,7 @@ export function Ppl(props: PplProps) {
                 allMethods={allMethods}
                 customView={CustomView}
                 tags={tags}
+                views={['gallery', 'sheet']}
             />
         </Wrapper>
     );

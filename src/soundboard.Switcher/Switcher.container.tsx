@@ -6,11 +6,11 @@ import { soundboard as store } from '@gdi/selectors';
 const options = [
     {
         id: 'day',
-        label: 'Day',
+        text: 'Day',
     },
     {
         id: 'evening',
-        label: 'Evening',
+        text: 'Evening',
     },
 ];
 

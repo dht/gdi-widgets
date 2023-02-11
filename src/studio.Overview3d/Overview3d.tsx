@@ -28,8 +28,6 @@ export function Overview3d(props: Overview3dProps) {
         });
     }, [board]);
 
-    console.log('2 ->', 2);
-
     return (
         <Wrapper
             className='Overview3d-wrapper'

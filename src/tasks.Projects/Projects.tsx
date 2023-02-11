@@ -29,6 +29,7 @@ export function Projects(props: ProjectsProps) {
                 definitions={crudDefinitions}
                 dispatch={dispatch}
                 allOptions={allOptions}
+                views={['sheet']}
             />
         </Wrapper>
     );

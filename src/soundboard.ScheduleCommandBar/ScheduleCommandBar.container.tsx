@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { BigAutoComplete } from '@gdi/web-ui';
 import { useDispatch, useSelector } from 'react-redux';
 import { tasks } from '@gdi/selectors';
@@ -9,6 +9,13 @@ export const ScheduleCommandBarContainer = () => {
         tasks.selectors.options.$ticketsAndProjectsOptions
     );
 
+    const optionsParsed = useMemo(() => {
+        return options.map((option) => ({
+            ...option,
+            label: option.text,
+        }));
+    }, []);
+
     function onRun(command: any) {
         dispatch({
             type: 'SCHEDULE_ATTACH_TICKET_TO_BLOCK',
@@ -16,7 +23,7 @@ export const ScheduleCommandBarContainer = () => {
         });
     }
 
-    return <BigAutoComplete items={options as any[]} onRun={onRun} />;
+    return <BigAutoComplete items={optionsParsed as any[]} onRun={onRun} />;
 };
 
 export default ScheduleCommandBarContainer;

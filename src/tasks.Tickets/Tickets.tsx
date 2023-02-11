@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Wrapper } from './Tickets.style';
-import { Multi } from '@gdi/web-ui';
+import { Multi } from '@mult/core';
 
 import { useCrudDefinitions } from '@gdi/platformer';
 
@@ -23,6 +23,8 @@ export function Tickets(props: TicketsProps) {
 
     const crudDefinitions = useCrudDefinitions('ticket');
 
+    console.log('crudDefinitions ->', crudDefinitions);
+
     return (
         <Wrapper className='Tickets-wrapper' data-testid='Tickets-wrapper'>
             <Multi
@@ -35,6 +37,7 @@ export function Tickets(props: TicketsProps) {
                 allOptions={allOptions}
                 customView={customView}
                 newDataExtra={newDataExtra}
+                views={['board', 'sheet']}
             />
         </Wrapper>
     );
